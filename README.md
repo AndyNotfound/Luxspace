@@ -1,3 +1,2 @@
 # Luxury space
-
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+![image](https://user-images.githubusercontent.com/40969170/176956639-4dfa5489-24a7-414a-8be5-6665c23970e9.png)
