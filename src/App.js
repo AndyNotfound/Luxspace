@@ -1,9 +1,12 @@
+import './index.css'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Router>
+      <Route path="/" component={HomePage} />
+    </Router>
   );
 }
 
