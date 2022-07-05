@@ -2,30 +2,30 @@ import React from 'react'
 
 export default function JustArrived() {
   return (
-    <section class="flex flex-col py-16">
-      <div class="container mx-auto mb-4">
-        <div class="flex justify-center text-center mb-4">
-          <h3 class="text-2xl capitalize font-semibold">
-            Just Arrived <br class="" />this summer for you
+    <section className="flex flex-col py-16">
+      <div className="container mx-auto mb-4">
+        <div className="flex justify-center text-center mb-4">
+          <h3 className="text-2xl capitalize font-semibold">
+            Just Arrived <br className="" />this summer for you
           </h3>
         </div>
       </div>
-      <div class="overflow-x-hidden px-4" id="carousel">
-        <div class="container mx-auto"></div>
-        <div class="flex -mx-4 flex-row relative">
-          <div class="px-4 relative card group">
+      <div className="overflow-x-hidden px-4" id="carousel">
+        <div className="container mx-auto"></div>
+        <div className="flex -mx-4 flex-row relative">
+          <div className="px-4 relative card group">
             <div
-              class="rounded-xl overflow-hidden card-shadow relative"
+              className="rounded-xl overflow-hidden card-shadow relative"
               style={{ width: 287, height: 386 }}
             >
               <div
-                class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
+                className="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
               >
                 <div
-                  class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
+                  className="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
                 >
                   <svg
-                    class="fill-current"
+                    className="fill-current"
                     width="43"
                     height="24"
                     viewBox="0 0 43 24"
@@ -44,28 +44,28 @@ export default function JustArrived() {
               <img
                 src="./images/content/image-arrived-1.png"
                 alt=""
-                class="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center"
               />
             </div>
-            <h5 class="text-lg font-semibold mt-4">Cangkir Mauttie</h5>
-            <span class="">IDR 89.300</span>
-            <a href="details.html" class="stretched-link">
+            <h5 className="text-lg font-semibold mt-4">Cangkir Mauttie</h5>
+            <span className="">IDR 89.300</span>
+            <a href="details.html" className="stretched-link">
             </a>
           </div>
 
-          <div class="px-4 relative card group">
+          <div className="px-4 relative card group">
             <div
-              class="rounded-xl overflow-hidden card-shadow relative"
+              className="rounded-xl overflow-hidden card-shadow relative"
               style={{ width: 287, height: 386 }}
             >
               <div
-                class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
+                className="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
               >
                 <div
-                  class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
+                  className="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
                 >
                   <svg
-                    class="fill-current"
+                    className="fill-current"
                     width="43"
                     height="24"
                     viewBox="0 0 43 24"
@@ -84,28 +84,28 @@ export default function JustArrived() {
               <img
                 src="./images/content/image-arrived-2.png"
                 alt=""
-                class="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center"
               />
             </div>
-            <h5 class="text-lg font-semibold mt-4">Bankyu Minimay</h5>
-            <span class="">IDR 67.899</span>
-            <a href="details.html" class="stretched-link">
+            <h5 className="text-lg font-semibold mt-4">Bankyu Minimay</h5>
+            <span className="">IDR 67.899</span>
+            <a href="details.html" className="stretched-link">
             </a>
           </div>
 
-          <div class="px-4 relative card group">
+          <div className="px-4 relative card group">
             <div
-              class="rounded-xl overflow-hidden card-shadow relative"
+              className="rounded-xl overflow-hidden card-shadow relative"
               style={{ width: 287, height: 386 }}
             >
               <div
-                class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
+                className="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
               >
                 <div
-                  class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
+                  className="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
                 >
                   <svg
-                    class="fill-current"
+                    className="fill-current"
                     width="43"
                     height="24"
                     viewBox="0 0 43 24"
@@ -124,28 +124,28 @@ export default function JustArrived() {
               <img
                 src="./images/content/image-arrived-3.png"
                 alt=""
-                class="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center"
               />
             </div>
-            <h5 class="text-lg font-semibold mt-4">Buku Sidu Edition</h5>
-            <span class="">IDR 120.699</span>
-            <a href="details.html" class="stretched-link">
+            <h5 className="text-lg font-semibold mt-4">Buku Sidu Edition</h5>
+            <span className="">IDR 120.699</span>
+            <a href="details.html" className="stretched-link">
             </a>
           </div>
 
-          <div class="px-4 relative card group">
+          <div className="px-4 relative card group">
             <div
-              class="rounded-xl overflow-hidden card-shadow relative"
+              className="rounded-xl overflow-hidden card-shadow relative"
               style={{ width: 287, height: 386 }}
             >
               <div
-                class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
+                className="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
               >
                 <div
-                  class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
+                  className="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
                 >
                   <svg
-                    class="fill-current"
+                    className="fill-current"
                     width="43"
                     height="24"
                     viewBox="0 0 43 24"
@@ -164,28 +164,28 @@ export default function JustArrived() {
               <img
                 src="./images/content/image-arrived-4.png"
                 alt=""
-                class="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center"
               />
             </div>
-            <h5 class="text-lg font-semibold mt-4">Watch Notes X</h5>
-            <span class="">IDR 1.973.000</span>
-            <a href="details.html" class="stretched-link">
+            <h5 className="text-lg font-semibold mt-4">Watch Notes X</h5>
+            <span className="">IDR 1.973.000</span>
+            <a href="details.html" className="stretched-link">
             </a>
           </div>
 
-          <div class="px-4 relative card group">
+          <div className="px-4 relative card group">
             <div
-              class="rounded-xl overflow-hidden card-shadow relative"
+              className="rounded-xl overflow-hidden card-shadow relative"
               style={{ width: 287, height: 386 }}
             >
               <div
-                class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
+                className="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
               >
                 <div
-                  class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
+                  className="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
                 >
                   <svg
-                    class="fill-current"
+                    className="fill-current"
                     width="43"
                     height="24"
                     viewBox="0 0 43 24"
@@ -204,28 +204,28 @@ export default function JustArrived() {
               <img
                 src="./images/content/image-arrived-5.png"
                 alt=""
-                class="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center"
               />
             </div>
-            <h5 class="text-lg font-semibold mt-4">Racking Plants</h5>
-            <span class="">IDR 599.400</span>
-            <a href="details.html" class="stretched-link">
+            <h5 className="text-lg font-semibold mt-4">Racking Plants</h5>
+            <span className="">IDR 599.400</span>
+            <a href="details.html" className="stretched-link">
             </a>
           </div>
 
-          <div class="px-4 relative card group">
+          <div className="px-4 relative card group">
             <div
-              class="rounded-xl overflow-hidden card-shadow relative"
+              className="rounded-xl overflow-hidden card-shadow relative"
               style={{ width: 287, height: 386 }}
             >
               <div
-                class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
+                className="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
               >
                 <div
-                  class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
+                  className="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
                 >
                   <svg
-                    class="fill-current"
+                    className="fill-current"
                     width="43"
                     height="24"
                     viewBox="0 0 43 24"
@@ -244,28 +244,28 @@ export default function JustArrived() {
               <img
                 src="./images/content/image-arrived-3.png"
                 alt=""
-                class="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center"
               />
             </div>
-            <h5 class="text-lg font-semibold mt-4">Racking Plants</h5>
-            <span class="">IDR 599.400</span>
-            <a href="#details.html" class="stretched-link">
+            <h5 className="text-lg font-semibold mt-4">Racking Plants</h5>
+            <span className="">IDR 599.400</span>
+            <a href="#details.html" className="stretched-link">
             </a>
           </div>
 
-          <div class="px-4 relative card group">
+          <div className="px-4 relative card group">
             <div
-              class="rounded-xl overflow-hidden card-shadow relative"
+              className="rounded-xl overflow-hidden card-shadow relative"
               style={{ width: 287, height: 386 }}
             >
               <div
-                class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
+                className="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-black bg-opacity-35"
               >
                 <div
-                  class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
+                  className="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
                 >
                   <svg
-                    class="fill-current"
+                    className="fill-current"
                     width="43"
                     height="24"
                     viewBox="0 0 43 24"
@@ -284,12 +284,12 @@ export default function JustArrived() {
               <img
                 src="./images/content/image-arrived-1.png"
                 alt=""
-                class="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center"
               />
             </div>
-            <h5 class="text-lg font-semibold mt-4">Racking Plants</h5>
-            <span class="">IDR 599.400</span>
-            <a href="#details.html" class="stretched-link">
+            <h5 className="text-lg font-semibold mt-4">Racking Plants</h5>
+            <span className="">IDR 599.400</span>
+            <a href="#details.html" className="stretched-link">
             </a>
           </div>
         </div>
