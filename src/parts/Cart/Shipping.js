@@ -70,7 +70,7 @@ export default function Shipping() {
                     className="border border-gray-200 focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full focus:outline-none"
                     >
                     <img
-                        src="./images/content/logo-fedex.svg"
+                        src="/images/content/logo-fedex.svg"
                         alt="Logo Fedex"
                         className="object-contain max-h-full"
                     />
@@ -84,7 +84,7 @@ export default function Shipping() {
                     className="border border-gray-200 focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full focus:outline-none"
                     >
                     <img
-                        src="./images/content/logo-dhl.svg"
+                        src="/images/content/logo-dhl.svg"
                         alt="Logo dhl"
                         className="object-contain max-h-full"
                     />
@@ -106,7 +106,7 @@ export default function Shipping() {
                     className="border border-gray-200 focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full focus:outline-none"
                     >
                     <img
-                        src="./images/content/logo-midtrans.png"
+                        src="/images/content/logo-midtrans.png"
                         alt="Logo midtrans"
                         className="object-contain max-h-full"
                     />
@@ -120,7 +120,7 @@ export default function Shipping() {
                     className="border border-gray-200 focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full focus:outline-none"
                     >
                     <img
-                        src="./images/content/logo-mastercard.svg"
+                        src="/images/content/logo-mastercard.svg"
                         alt="Logo mastercard"
                     />
                     </button>
@@ -133,7 +133,7 @@ export default function Shipping() {
                     className="border border-gray-200 focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full focus:outline-none"
                     >
                     <img
-                        src="./images/content/logo-bitcoin.svg"
+                        src="/images/content/logo-bitcoin.svg"
                         alt="Logo bitcoin"
                         className="object-contain max-h-full"
                     />
@@ -147,7 +147,7 @@ export default function Shipping() {
                     className="border border-gray-200 focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full focus:outline-none"
                     >
                     <img
-                        src="./images/content/logo-american-express.svg"
+                        src="/images/content/logo-american-express.svg"
                         alt="Logo american-logo-american-express"
                     />
                     </button>
