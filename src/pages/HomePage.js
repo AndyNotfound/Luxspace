@@ -7,10 +7,10 @@ import BrowseRoom from '../parts/Home/BrowseRoom'
 import JustArrived from '../parts/Home/JustArrived'
 import Sitemap from '../parts/Sitemap'
 
-export default function HomePage(props) {
+export default function HomePage() {
   return (
     <>
-    <Header />
+    <Header theme="light" position="absolute" />
     <Hero />
     <BrowseRoom />
     <JustArrived />

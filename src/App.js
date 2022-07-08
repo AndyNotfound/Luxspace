@@ -1,11 +1,13 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import './index.css'
+import DetailPage from './pages/Details';
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/categories/:idc" element={<DetailPage />} />
       </Routes>
     </BrowserRouter>
     
