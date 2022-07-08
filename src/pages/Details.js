@@ -1,6 +1,5 @@
 import React from 'react'
 import Breadcrumb from '../components/Breadcrumb'
-import Client from '../parts/Client'
 import Product from '../parts/Details/Product'
 import Suggestion from '../parts/Details/Suggestion'
 import Footer from '../parts/Footer'
