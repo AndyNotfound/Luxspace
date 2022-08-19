@@ -12,6 +12,7 @@ import Sitemap from '../parts/Sitemap'
 export default function HomePage() {
   useScrollAchor();
   useModalDOM();
+  
   return (
     <>
     <Header theme="light" position="absolute" />
