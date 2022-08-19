@@ -1,4 +1,4 @@
-import { useState, useCallback, useReducer, useRef } from 'react'
+import { useCallback, useReducer, useRef } from 'react'
 import useSafeDispatch from './useSafeDispatch'
 
 const defaultState = {
@@ -58,7 +58,6 @@ export default function useAsync(initialState) {
       [safeSetState],
     )
     
-
     return {
         data,
         error,
