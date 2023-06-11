@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Sitemap() {
   return (
@@ -17,13 +17,19 @@ export default function Sitemap() {
               <h5 className="text-lg font-semibold mb-2 relative">Overview</h5>
               <ul className="h-0 invisible md:h-auto md:visible overflow-hidden">
                 <li>
-                  <Link to="/shipping" className="hover:underline py-1 block">Shipping</Link>
+                  <Link to="/shipping" className="hover:underline py-1 block">
+                    Shipping
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/refund" className="hover:underline py-1 block">Refund</Link>
+                  <Link to="/refund" className="hover:underline py-1 block">
+                    Refund
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/promotion" className="hover:underline py-1 block">Promotion</Link>
+                  <Link to="/promotion" className="hover:underline py-1 block">
+                    Promotion
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -31,13 +37,19 @@ export default function Sitemap() {
               <h5 className="text-lg font-semibold mb-2 relative">Company</h5>
               <ul className="h-0 invisible md:h-auto md:visible overflow-hidden">
                 <li>
-                  <Link to="/about" className="hover:underline py-1 block">About</Link>
+                  <Link to="/about" className="hover:underline py-1 block">
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/career" className="hover:underline py-1 block">Career</Link>
+                  <Link to="/career" className="hover:underline py-1 block">
+                    Career
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/contact-us" className="hover:underline py-1 block">Contact Us</Link>
+                  <Link to="/contact-us" className="hover:underline py-1 block">
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -45,19 +57,25 @@ export default function Sitemap() {
               <h5 className="text-lg font-semibold mb-2 relative">Explore</h5>
               <ul className="h-0 invisible md:h-auto md:visible overflow-hidden">
                 <li>
-                    <Link to="/terms-and-conds" className="hover:underline py-1 block">
-                        Terms & Conds
-                    </Link>
+                  <Link
+                    to="/terms-and-conds"
+                    className="hover:underline py-1 block"
+                  >
+                    Terms & Conds
+                  </Link>
                 </li>
                 <li>
-                    <Link to="/privacy-policy" className="hover:underline py-1 block">
-                        Privacy Policy
-                    </Link>
+                  <Link
+                    to="/privacy-policy"
+                    className="hover:underline py-1 block"
+                  >
+                    Privacy Policy
+                  </Link>
                 </li>
                 <li>
-                    <Link to="/developer" className="hover:underline py-1 block">
-                        For Developer
-                    </Link>
+                  <Link to="/developer" className="hover:underline py-1 block">
+                    For Developer
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -93,5 +111,5 @@ export default function Sitemap() {
         </aside>
       </div>
     </section>
-  )
+  );
 }

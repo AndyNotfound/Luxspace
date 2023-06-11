@@ -1,10 +1,10 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import HomePage from './pages/HomePage';
-import './index.css'
-import DetailPage from './pages/Details';
-import Cart from './pages/Cart';
-import Congrats from './pages/Congrats';
-import PageNotfound from './pages/PageNotfound';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import "./index.css";
+import DetailPage from "./pages/Details";
+import Cart from "./pages/Cart";
+import Congrats from "./pages/Congrats";
+import PageNotfound from "./pages/PageNotfound";
 
 function App() {
   return (
@@ -17,7 +17,6 @@ function App() {
         <Route path="*" element={<PageNotfound />} />
       </Routes>
     </BrowserRouter>
-    
   );
 }
 

@@ -1,24 +1,25 @@
-import React from 'react'
+import React from "react";
 
 export default function Hero() {
   return (
     <section className="flex items-center hero">
-      <div
-        className="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption"
-      >
+      <div className="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption">
         <h1 className="text-3xl md:text-5xl leading-tight font-semibold">
-          The Room <br className="" />You've Dreaming
+          The Room <br className="" />
+          You've Dreaming
         </h1>
         <h2 className="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
           Kami menyediakan furniture berkelas yang
-          <br className="hidden lg:block" />membuat ruangan terasa homey
+          <br className="hidden lg:block" />
+          membuat ruangan terasa homey
         </h2>
         <div>
           <a
             href="#browse-the-room"
             className="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200"
-            >Explore Now</a
           >
+            Explore Now
+          </a>
         </div>
       </div>
       <div className="w-full inset-0 md:relative md:w-1/2">
@@ -49,5 +50,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
