@@ -15,6 +15,22 @@ export default function JustArrived() {
     run(fetch({ url: "/api/products/?page=1&limit=10" }));
   }, [run]);
 
+  function Loading() {
+    return Array(6)
+      .fill()
+      .map((_, index) => {
+        return (
+          <div key={index} className="px-4 relative card group">
+            <div
+              className="rounded-xl bg-gray-300 overflow-hidden card-shadow relative"
+              style={{ width: 287, height: 386 }}
+            ></div>
+            <div className="w-24 h-3 bg-gray-300 mt-3 rounded-full"></div>
+            <div className="w-36 h-3 bg-gray-300 mt-2 rounded-full"></div>
+          </div>
+        );
+      });
+  }
   return (
     <section className="flex flex-col py-16">
       <div className="container mx-auto mb-4">
@@ -29,7 +45,16 @@ export default function JustArrived() {
         <div className="container mx-auto" ref={refContainer}></div>
 
         {isLoading ? (
-          <div className="flex -mx-4 flex-row relative">Loading</div>
+          <div
+            className="flex -mx-4 flex-row relative"
+            style={{
+              paddingLeft: refContainer.current.getBoundingClientRect()
+                ? refContainer.current.getBoundingClientRect()?.left - 16
+                : 0,
+            }}
+          >
+            <Loading />
+          </div>
         ) : error ? (
           JSON.stringify(error)
         ) : data?.data.length === 0 ? (
