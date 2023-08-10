@@ -3,7 +3,7 @@ import useAsync from "../../helpers/hooks/useAsync";
 import fetch from "../../helpers/fetch/index.js";
 
 export default function BrowseRoom() {
-  const { data, status, error, run, isLoading } = useAsync({
+  const { data, run, isLoading } = useAsync({
     data: { username: "Hello" },
   });
 
