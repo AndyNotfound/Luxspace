@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+function SitemapLinks({ isActive, setActive, children, title }) {
+  return (
+    <div className="px-4 w-full md:w-2/12 mb-4 md:mb-0 accordion">
+      <h5 className="text-lg font-semibold mb-2 relative">
+        {title}
+        <button
+          onClick={() => setActive(isActive)}
+          className={[
+            "absolute block md:hidden right-0 transform -translate-y-1/2 focus:outline-none transition duration-200 top-1/2",
+            isActive ? "rotate-0" : "rotate-180",
+          ].join(" ")}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+          </svg>
+        </button>
+      </h5>
+      <ul
+        className={[
+          "md:h-auto md:visibile md:opacity-100 overflow-hidden transition duration-200",
+          isActive ? "h-0 invisible opacity-0" : "opacity-100",
+        ].join(" ")}
+      >
+        {children}
+      </ul>
+    </div>
+  );
+}
+
 export default function Sitemap() {
+  const [active, setActive] = useState(null);
+  console.log(active);
   return (
     <section className="">
       <div className="border-t border-b border-gray-200 py-12 mt-16 px-4">
@@ -13,72 +48,75 @@ export default function Sitemap() {
         </div>
         <aside className="container mx-auto">
           <div className="flex flex-wrap -mx-4 justify-center">
-            <div className="px-4 w-full md:w-2/12 mb-4 md:mb-0 accordion">
-              <h5 className="text-lg font-semibold mb-2 relative">Overview</h5>
-              <ul className="h-0 invisible md:h-auto md:visible overflow-hidden">
-                <li>
-                  <Link to="/shipping" className="hover:underline py-1 block">
-                    Shipping
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/refund" className="hover:underline py-1 block">
-                    Refund
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/promotion" className="hover:underline py-1 block">
-                    Promotion
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="px-4 w-full md:w-2/12 mb-4 md:mb-0 accordion">
-              <h5 className="text-lg font-semibold mb-2 relative">Company</h5>
-              <ul className="h-0 invisible md:h-auto md:visible overflow-hidden">
-                <li>
-                  <Link to="/about" className="hover:underline py-1 block">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/career" className="hover:underline py-1 block">
-                    Career
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact-us" className="hover:underline py-1 block">
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="px-4 w-full md:w-2/12 mb-4 md:mb-0 accordion">
-              <h5 className="text-lg font-semibold mb-2 relative">Explore</h5>
-              <ul className="h-0 invisible md:h-auto md:visible overflow-hidden">
-                <li>
-                  <Link
-                    to="/terms-and-conds"
-                    className="hover:underline py-1 block"
-                  >
-                    Terms & Conds
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/privacy-policy"
-                    className="hover:underline py-1 block"
-                  >
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/developer" className="hover:underline py-1 block">
-                    For Developer
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            <SitemapLinks
+              setActive={setActive}
+              isActive={active === 1 ? null : 1}
+              title="Overview"
+            >
+              <li>
+                <Link to="/shipping" className="hover:underline py-1 block">
+                  Shipping
+                </Link>
+              </li>
+              <li>
+                <Link to="/refund" className="hover:underline py-1 block">
+                  Refund
+                </Link>
+              </li>
+              <li>
+                <Link to="/promotion" className="hover:underline py-1 block">
+                  Promotion
+                </Link>
+              </li>
+            </SitemapLinks>
+            <SitemapLinks
+              setActive={setActive}
+              isActive={active === 2 ? null : 2}
+              title="Company"
+            >
+              <li>
+                <Link to="/about" className="hover:underline py-1 block">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/career" className="hover:underline py-1 block">
+                  Career
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact-us" className="hover:underline py-1 block">
+                  Contact Us
+                </Link>
+              </li>
+            </SitemapLinks>
+            <SitemapLinks
+              setActive={setActive}
+              isActive={active === 3 ? null : 3}
+              title="Explore"
+            >
+              <li>
+                <Link
+                  to="/terms-and-conds"
+                  className="hover:underline py-1 block"
+                >
+                  Terms & Conds
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/privacy-policy"
+                  className="hover:underline py-1 block"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/developer" className="hover:underline py-1 block">
+                  For Developer
+                </Link>
+              </li>
+            </SitemapLinks>
             <div className="px-4 w-full md:w-3/12 mb-4 md:mb-0">
               <h5 className="text-lg font-semibold mb-2 relative">
                 Special Letter
