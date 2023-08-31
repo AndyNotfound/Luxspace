@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import useAsync from "../../helpers/hooks/useAsync";
-import fetch from "../../helpers/fetch/index.js";
 import { Link } from "react-router-dom";
 import Carousel from "../../components/Carousel";
+import fetchData from "../../helpers/fetch/index.js";
 
 export default function JustArrived() {
   const { data, error, run, isLoading } = useAsync({
@@ -12,7 +12,7 @@ export default function JustArrived() {
   const refContainer = useRef(null);
 
   useEffect(() => {
-    run(fetch({ url: "/api/products/?page=1&limit=10" }));
+    run(fetchData({ url: "/api/products/?page=1&limit=10" }));
   }, [run]);
 
   function Loading() {

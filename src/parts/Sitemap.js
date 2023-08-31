@@ -36,7 +36,6 @@ function SitemapLinks({ isActive, setActive, children, title }) {
 
 export default function Sitemap() {
   const [active, setActive] = useState(null);
-  console.log(active);
   return (
     <section className="">
       <div className="border-t border-b border-gray-200 py-12 mt-16 px-4">

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import useAsync from "../../helpers/hooks/useAsync";
-import fetch from "../../helpers/fetch/index.js";
+import fetchData from "../../helpers/fetch/index.js";
 
 export default function BrowseRoom() {
   const { data, run, isLoading } = useAsync({
@@ -8,7 +8,7 @@ export default function BrowseRoom() {
   });
 
   useEffect(() => {
-    run(fetch({ url: "/api/categories/?page=1&limit=4" }));
+    run(fetchData({ url: "/api/categories/?page=1&limit=4" }));
   }, [run]);
 
   const classRatio = {
