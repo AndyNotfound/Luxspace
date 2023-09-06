@@ -25,7 +25,7 @@ function SitemapLinks({ isActive, setActive, children, title }) {
       <ul
         className={[
           "md:h-auto md:visibile md:opacity-100 overflow-hidden transition duration-200",
-          isActive ? "h-0 invisible opacity-0" : "opacity-100",
+          isActive ? "h-0 opacity-0" : "visible opacity-100",
         ].join(" ")}
       >
         {children}
