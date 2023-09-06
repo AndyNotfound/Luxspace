@@ -3,6 +3,9 @@ import useAsync from "../../helpers/hooks/useAsync";
 import { Link } from "react-router-dom";
 import Carousel from "../../components/Carousel";
 import fetchData from "../../helpers/fetch/index.js";
+import '../../helpers/format/thousand'
+import '../../helpers/format/currency'
+
 
 export default function JustArrived() {
   const { data, error, run, isLoading } = useAsync({
@@ -91,7 +94,7 @@ export default function JustArrived() {
                     />
                   </div>
                   <h5 className="text-lg font-semibold mt-4">{product}</h5>
-                  <span className="">IDR {price}</span>
+                  <span className="">{price.currency()}</span>
                   <Link
                     to={`categories/${idc}/products/${id}`}
                     className="stretched-link"

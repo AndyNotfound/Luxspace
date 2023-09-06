@@ -31,8 +31,6 @@ function Reducer(state, action) {
             },
       };
     case "REMOVE_FROM_CART":
-      console.log(state, action);
-      console.log("Hai");
       return {
         ...state,
         cart: Object.keys(state.cart)
@@ -42,6 +40,12 @@ function Reducer(state, action) {
             acc[item.id] = item;
             return acc;
           }, {}),
+      };
+
+    case "RESET_CART":
+      return {
+        ...state,
+        cart: initialState.cart,
       };
 
     default: {

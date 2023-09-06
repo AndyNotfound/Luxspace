@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useGlobalContext } from "../../helpers/hooks/useGlobalContext";
+import "../../helpers/format/currency";
 
 export default function Product({ data }) {
   const [slider, setSlider] = useState(() => data?.imgUrls?.[0] || "");
@@ -12,9 +13,7 @@ export default function Product({ data }) {
       <div className="flex flex-wrap my-4 md:my-12">
         <div className="w-full md:hidden px-4">
           <h2 className="text-5xl font-semibold">{data?.title}</h2>
-          <span className="text-xl">
-            {data ? `IDR ${data?.price.toLocaleString("id-ID")}` : "IDR 0"}
-          </span>
+          <span className="text-xl">{data?.price.currency()}</span>
         </div>
         <div className="flex-1">
           <div className="slider">
@@ -56,9 +55,7 @@ export default function Product({ data }) {
         </div>
         <div className="flex-1 px-4 md:p-6">
           <h2 className="text-5xl font-semibold">{data?.title}</h2>
-          <p className="text-xl">
-            {data ? `IDR ${data?.price.toLocaleString("id-ID")}` : "IDR 0"}
-          </p>
+          <p className="text-xl">{data?.price.currency()}</p>
 
           <button
             className="transition-all duration-200 bg-pink-400 text-black focus:bg-black focus:text-pink-400 rounded-full px-8 py-3 mt-4 inline-flex"

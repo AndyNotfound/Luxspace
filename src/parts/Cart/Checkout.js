@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 export default function Checkout() {
   const { state, dispatch } = useGlobalContext();
 
-  console.log(Object.values(state.cart));
   return (
     <div className="w-full px-4 mb-4 md:w-8/12 md:mb-0" id="shopping-cart">
       <div className="flex flex-start mb-4 mt-8 pb-3 border-b border-gray-200 md:border-b-0">

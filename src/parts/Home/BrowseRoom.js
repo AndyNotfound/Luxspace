@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import useAsync from "../../helpers/hooks/useAsync";
 import fetchData from "../../helpers/fetch/index.js";
+import { Link } from 'react-router-dom'
+import '../../helpers/format/thousand'
 
 export default function BrowseRoom() {
   const { data, run, isLoading } = useAsync({
@@ -84,7 +86,7 @@ export default function BrowseRoom() {
               <div className="w-36 h-3 bg-gray-400 mt-2 rounded-full"></div>
             </div>
           </div>
-          <a href="details.html" className="stretched-link"></a>
+          <Link to="details.html" className="stretched-link"></Link>
         </div>
       );
     });
@@ -125,11 +127,11 @@ export default function BrowseRoom() {
                   </div>
                   <div className={`overlay ${classRatio.meta[ratio.md]}`}>
                     <h5 className="text-lg font-semibold">{title}</h5>
-                    <span className="">{`${products} item${
+                    <span className="">{`${products.thousand()} item${
                       products > 1 ? "s" : ""
                     }`}</span>
                   </div>
-                  <a href="details.html" className="stretched-link"></a>
+                  <Link to="details.html" className="stretched-link"></Link>
                 </div>
               );
             })

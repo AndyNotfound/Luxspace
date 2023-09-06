@@ -4,10 +4,11 @@ import Congratulation from "../parts/success/success";
 import Header from "../parts/Header";
 import Sitemap from "../parts/Sitemap";
 import Footer from "../parts/Footer";
+import Document from "../parts/Document";
 
 export default function Congrats() {
   return (
-    <>
+    <Document>
       <Header />
       <Breadcrumb
         list={[
@@ -18,6 +19,6 @@ export default function Congrats() {
       <Congratulation />
       <Sitemap />
       <Footer />
-    </>
+    </Document>
   );
 }
